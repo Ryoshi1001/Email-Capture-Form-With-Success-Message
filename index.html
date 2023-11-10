@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!--============================================= 
+    ==Start: Email-Sign-Up-Form & Modal Container==  
+  ==============================================-->
+  <main class="h-full w-full font-roboto sm:flex sm:flex-row sm:justify-center sm:items-center sm:h-screen bg-bgcolor sm:p-2">
+
+    <!--=========================== 
+      ==Start: Email-Sign-Up-Form==  
+    ============================-->
+    <div id="form" class="w-fit h-full mx-auto flex flex-col bg-white sm:flex sm:flex-row-reverse sm:justify-between sm:items-center sm:h-fit  sm:p-6 sm:rounded-3xl">
+
+      <div class="w-full flex justify-end">
+        <img class="w-full sm:hidden" src="images/illustration-sign-up-mobile.svg" alt="Illustration of updates line chart and number 94">
+        <img class=" hidden sm:block" src="images/illustration-sign-up-desktop.svg" alt="Illustration of updates line chart and number 94">
+      </div>
+
+      <div class="p-6 w-full">
+        <form action="" class="w-full h-full flex flex-col justify-center items-start">
+          <h1 class="text-h1 font-semibold sm:text-h1desktop">
+            Stay updated!
+          </h1>
+          <p class="text-base text-txtclr pt-4 pb-7">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="flex flex-col space-y-4 text-base text-txtclr pb-11">
+            <li class="flex flex-row items-start">
+              <img class="mr-4" src="images/icon-list.svg" alt="Orange circle with check Icon">
+              <p class="align-top">Product discovery and building what matters</p>
+            </li>
+            <li class="flex flex-row">
+              <img class="mr-4" src="images/icon-list.svg" alt="Orange circle with check Icon">
+              <p class="">Measuring to ensure updates are a success</p>
+            </li>
+            <li class="flex flex-row">
+              <img class="mr-4" src="images/icon-list.svg" alt="Orange circle with check Icon">
+              <p class="align-top">And much more!</p>
+            </li>
+          </ul>
+          <div class="w-full flex flex-row justify-between">
+            <p class="text-xs font-bold text-txtclr pb-2">
+              Email address
+            </p>            
+            <p id="errormessage" class="hidden text-xs font-bold text-txtclr pb-2 email-error-message__active">
+              Valid email required
+            </p>            
+          </div>
+          <input id="forminput" class="w-full border-2 p-3 rounded-lg text-lg mb-7 outline-none cursor-pointer" type="text" placeholder="email@company.com" required>
+          <button id="formbtn" type="submit" class="w-full bg-btnclr text-btntxtclr text-base font-semibold py-4 rounded-lg">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <!--=========================== 
+      ==End: Email-Sign-Up-Form==  
+    ============================-->    
+
+    <!--================================= 
+      ==Start: Modal-w/-Success-Message==  
+    ==================================-->  
+    <div id="modal" class="hidden p-8 w-full h-screen bg-white flex flex-col justify-between font-roboto sm:max-w-lg sm:h-fit sm:flex-col sm:justify-center sm:items-center sm:px-16 sm:py-12 sm:rounded-3xl">
+      <div class="w-full pt-36 font-roboto sm:pt-0">
+        <img class="w-16 pb-10" src="images/icon-list.svg" alt="Orange circle with check Icon">
+        <h1 class="text-h1desktop font-semibold leading-none pb-5">
+         Thanks for subscribing!          
+        </h1>
+        <p class="text-txtclr text-base font-roboto sm:pb-8">
+          A confirmation email has been sent to <span id="modalemail" class="text-h1clr font-semibold">ash@loremcompany.com.</span> 
+          Please open it and click the button inside to confirm your subscription.          
+        </p>
+      </div>
+      <button id="modalbtn" type="button" class="w-full bg-btnclr text-btntxtclr text-sm font-semibold py-4 rounded-lg">
+        Dismiss message        
+      </button>
+    </div>
+    <!--================================= 
+      ==End: Modal-w/-Success-Message==  
+    ==================================-->      
+  
+  </main>
+  <!--===========================================
+    ==End: Email-Sign-Up-Form & Modal Container==  
+  ============================================--> 
+  
+  <!--=========================== 
+    ==Start: Footer-Attribution==  
+  ============================-->   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Akdev</a>.
+  </div>
+  <!--========================= 
+    ==End: Footer-Attribution==  
+  ==========================--> 
+
+  <script src="app.js"></script>
+</body>
+</html>
