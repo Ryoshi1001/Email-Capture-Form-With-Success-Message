@@ -770,14 +770,14 @@ video {
 
 .email-input-error__active {
   color: hsl(4, 100%, 67%);
-  border: 1px solid hsl(4, 100%, 67%);
-  background-color: hsl(4, 100%, 67%, .2);
+  border: 1px solid hsl(4, 100%, 67%) !important;
+  background-color: hsl(4, 100%, 67%, .2) !important;
 }
 
 .email-input-ok {
   color: #383131;
-  border: 1px solid hsla(139, 70%, 30%, 0.2);
-  background-color: hsla(139, 66%, 71%, 0.2);
+  border: 1px solid hsla(139, 70%, 30%, 0.2) !important;
+  background-color: hsla(139, 66%, 71%, 0.2) !important;
 }
 
 @media (min-width: 640px) {
