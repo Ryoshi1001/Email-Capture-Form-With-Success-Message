@@ -73,7 +73,6 @@ formBtn.addEventListener('click', () => {
     event.preventDefault(); 
   } else {
     addErrors(); 
-    emailInput.style.border = 'solid #ff6257'; 
     event.preventDefault(); 
   }
 })
